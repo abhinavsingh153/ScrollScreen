@@ -25,14 +25,3 @@ The technique works by:
 2. Moving the X coordinate every frame
 3. Resetting the position when the image leaves the screen
 
-Pseudo logic:
-
-```java
-batch.draw(background, x, 0);
-batch.draw(background, x + backgroundWidth, 0);
-
-x -= speed;
-
-if(x <= -backgroundWidth){
-    x = 0;
-}
